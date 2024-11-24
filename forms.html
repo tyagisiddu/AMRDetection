@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="form-styles.css" />
+    <title>Anti-Microbial Resistance Detection</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">
+            <div>AMR</div>
+            Detection
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <form id="amrForm">
+            <div class="form-group">
+                <label for="bacteria">Bacteria</label>
+                <select id="bacteria" required>
+                    <option value="">select bacteria involved</option>
+                    <option value="a">CJ</option>
+                    <option value="b">EeS</option>
+                    <option value="c">KN</option>
+                    <option value="d">PA</option>
+                    <option value="e">SE</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="antibiotic">Antibiotic</label>
+                <select id="antibiotic" required>
+                    <option value="">select antibiotic administered </option>
+                    <option value="1">clindamycin</option>
+                    <option value="2">doripenem</option>
+                    <option value="3">ertapenem</option>
+                    <option value="4">imipenem</option>
+                    <option value="5">kanamycin</option>
+                    <option value="6">mcrapenem</option>
+                    <option value="7">stocptomycin</option>
+                    <option value="8">carbapenem</option>
+                </select>
+            </div>
+
+            <button type="button" id="showPartials" class="test-button">Choose Partials</button>
+
+            <div class="partial-fields" id="partialFields">
+                <div class="form-group">
+                    <label for="fieldA">POINT Mutations</label>
+                    <div class="multiselect">
+                        <div class="multiselect-input" data-field="A">
+                            <div class="selected-items">Click to select values</div>
+                        </div>
+                        <div class="multiselect-dropdown">
+                            <div class="multiselect-option" data-value="23S_A2075G">23S_A2075G</div>
+                            <div class="multiselect-option" data-value="50S_L22_A103V">50S_L22_A103V</div>
+                            <div class="multiselect-option" data-value="gyrA_P104S">gyrA_P104S</div>
+                            <div class="multiselect-option" data-value="gyrA_T86I">gyrA_T86I</div>
+                            <div class="multiselect-option" data-value="gyrA_T86K">gyrA_T86K</div>
+                            <div class="multiselect-option" data-value="gyrA_T86V">gyrA_T86V</div>
+                            <div class="multiselect-option" data-value="rpsL_K43R">rpsL_K43R</div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fieldB">COMPLETE Genes</label>
+                    <div class="multiselect">
+                        <div class="multiselect-input" data-field="B">
+                            <div class="selected-items">Click to select values</div>
+                        </div>
+                        <div class="multiselect-dropdown">
+                            <div class="multiselect-option" data-value="aad9">aad9</div>
+                            <div class="multiselect-option" data-value="aadE-Cc">aadE-Cc</div>
+                            <div class="multiselect-option" data-value="aadE">aadE</div>
+                            <div class="multiselect-option" data-value="aph(2'')-IIIa">aph(2'')-IIIa</div>
+                            <div class="multiselect-option" data-value="aph(2'')-If">aph(2'')-If</div>
+                            <div class="multiselect-option" data-value="aph(2'')-Ig">aph(2'')-Ig</div>
+                            <div class="multiselect-option" data-value="aph(2'')-Ih">aph(2'')-Ih</div>
+                            <div class="multiselect-option" data-value="aph(3')-IIIa">aph(3')-IIIa</div>
+                            <div class="multiselect-option" data-value="aph(3')-VIIa">aph(3')-VIIa</div>
+                            <div class="multiselect-option" data-value="blaOXA-184">blaOXA-184</div>
+                            <div class="multiselect-option" data-value="blaOXA-193">blaOXA-193</div>
+                            <div class="multiselect-option" data-value="blaOXA-449">blaOXA-449</div>
+                            <div class="multiselect-option" data-value="blaOXA-450">blaOXA-450</div>
+                            <div class="multiselect-option" data-value="blaOXA-460">blaOXA-460</div>
+                            <div class="multiselect-option" data-value="blaOXA-461">blaOXA-461</div>
+                            <div class="multiselect-option" data-value="blaOXA-489">blaOXA-489</div>
+                            <div class="multiselect-option" data-value="blaOXA-577">blaOXA-577</div>
+                            <div class="multiselect-option" data-value="blaOXA-578">blaOXA-578</div>
+                            <div class="multiselect-option" data-value="blaOXA-594">blaOXA-594</div>
+                            <div class="multiselect-option" data-value="blaOXA-603">blaOXA-603</div>
+                            <div class="multiselect-option" data-value="blaOXA-61">blaOXA-61</div>
+                            <div class="multiselect-option" data-value="blaOXA-623">blaOXA-623</div>
+                            <div class="multiselect-option" data-value="blaOXA">blaOXA</div>
+                            <div class="multiselect-option" data-value="lnu(C)">lnu(C)</div>
+                            <div class="multiselect-option" data-value="sat4">sat4</div>
+                            <div class="multiselect-option" data-value="tet(O)">tet(O)</div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fieldC">PARTIAL Genes</label>
+                    <div class="multiselect">
+                        <div class="multiselect-input" data-field="C">
+                            <div class="selected-items">Click to select values</div>
+                        </div>
+                        <div class="multiselect-dropdown">
+                            <div class="multiselect-option" data-value="aad9">aad9</div>
+                            <div class="multiselect-option" data-value="ant(6)-Ia">ant(6)-Ia</div>
+                            <div class="multiselect-option" data-value="aph(3')-IIIa">aph(3')-IIIa</div>
+                            <div class="multiselect-option" data-value="blaOXA">blaOXA</div>
+                            <div class="multiselect-option" data-value="tet(O)">tet(O)</div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fieldD">PARTIAL_END_OF_CONTIG Genes</label>
+                    <div class="multiselect">
+                        <div class="multiselect-input" data-field="D">
+                            <div class="selected-items">Click to select values</div>
+                        </div>
+                        <div class="multiselect-dropdown">
+                            <div class="multiselect-option" data-value="aadE-Cc">aadE-Cc</div>
+                            <div class="multiselect-option" data-value="ant(6)-Ia">ant(6)-Ia</div>
+                            <div class="multiselect-option" data-value="aph(3')-IIIa">aph(3')-IIIa</div>
+                            <div class="multiselect-option" data-value="blaOXA">blaOXA</div>
+                            <div class="multiselect-option" data-value="tet(O)">tet(O)</div>
+                          </div>
+                    </div>
+                </div>
+
+                <button type="button" id="predictButton" class="test-button">Predict</button>            
+            </div>
+        </form>
+    </div>
+
+    <div id="spinnerOverlay" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+    <style>
+        body.blurred {
+            filter: blur(5px);
+        }
+    
+        #spinnerOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+    
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+    
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+
+    <script src="form-script.js"></script>
+</body>
+</html>
