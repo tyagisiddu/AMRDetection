@@ -189,11 +189,6 @@ document.getElementById('predictButton').addEventListener('click', function(e) {
               'YES Antimicrobial Resistance Detected' : 
               'NO Antimicrobial Resistance Detected');
     }, 3000);
-    // setTimeout(function() {
-    //     alert(prediction === 'YES' ? 
-    //           'YES Antimicrobial Resistance Detected' : 
-    //           'NO Antimicrobial Resistance Detected');
-    // }, 3000);
 
     console.log('Current Database State:', JSON.parse(JSON.stringify(resistanceDatabase)));
 });
